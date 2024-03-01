@@ -1,0 +1,58 @@
+<!-- entire field with boarder by using field set tag -->
+<!-- without field set  tag we cannot use this legend because,legend tag is a child class of field set -->
+<!-- name tage means grouping of input it does allows to click one input -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+        <label for="name">Name</label>        <input type="text" required id="name"> <br><br>
+        <label for="age">Age</label>
+        <input type="number" required id="age"> <br><br>
+        <label for="email">Email</label>
+        <input type="email" required id="email"> <br><br>
+        <label for="dob">Dob</label>
+        <input type="date" required id="dob"> <br><br>
+       </fieldset>
+       <fieldset>
+        <legend>Education_Details</legend>
+        <label for="">Department</label><br><br>
+        <input type="radio" id="cs" name="dept">
+        <label for="cs">CS</label>
+        <input type="radio" id="it" name="dept">
+        <label for="it">IT</label>
+        <input type="radio" id="mech" name="dept">
+        <label for="mech">Mech</label>
+        <input type="radio" id="civil" name="dept"
+        >
+        <label for="civil">Civil</label><br><br>
+        <label for="">YOG</label>
+        <input list="yop" id="yog">
+        <datalist id="yop">
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+
+        </datalist> <br><br>
+        <label for="">Skills</label><br>
+        <input type="checkbox" id="HTML">
+        <label for="HTML">HTML</label><br>
+        <input type="checkbox" id="CSS">
+        <label for="CSS">CSS</label><br>
+        <input type="checkbox" id="JS">
+        <label for="JS">JS</label><br>
+
+       </fieldset>
+       <input type="submit">
+    </form>
+</body>
+</html>
