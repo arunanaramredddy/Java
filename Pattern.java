@@ -1,51 +1,35 @@
-<<<<<<< HEAD
-static String reverse(String s) {
-		String t="";
-		for(int i=s.length()-1;i>=0;i--) {
-			t=t+s.charAt(i);
-		}
-		return t;
-	}
 
+import java.util.*;
 
+public class Pattern{
 
-	public class Pattern{
-	
-		public static void main(String []args)
-		{  
-			 int i,j,n=5;  
-			  for(i=1;i<=n;i++)
-			  {
-				  for(j=n;j>=1;j--)
-				  {
-					  if(j!=i)  
-					   System.out.print(j);  
-					   else  
-						System.out.print("*");  
-			   }  
-			   System.out.println("");  
-			   }  
-		} 
-	
-	}
-	
-=======
-package Programs;
+    // Function to demonstrate pattern
+    public static void printPattern(int n)
+    {
+        int i, j;
+        // outer loop to handle rows
+        for (i = 1; i <= n; i++) {
 
-public class Pattern {
+            // inner loop to print spaces.
+            for (j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
 
-	public static void main(String[] args) {
-		int n=5;
-		for(int i=1;i<=n;i++) {
-			for(int j=1;j<=n;j++) {
-				if(i*j<10) {
-					System.out.print(0);
-				}
-				System.out.print(i*j + " ");
-			}
-			System.out.println();
-		}
-	}
+            // inner loop to print value of j.
+            for (j = i; j <= n; j++) {
+                System.out.print(j + " ");
+            }
 
+            // printing new line for each row
+            System.out.println();
+        }
+    }
+
+    // Driver Function
+    public static void main(String args[])
+    {
+        int n = 6;
+        printPattern(n);
+    }
 }
->>>>>>> 62d64b5a57c7b9cf5b71ec09ea868ec8f8bc2a72
+
